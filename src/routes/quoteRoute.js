@@ -1,5 +1,5 @@
 import express from "express"
-import { createQuote, getRandomQuote } from "../controllers/quoteController.js"
+import { createQuote, deleteQuote, getAllQuotes, getRandomQuote, updateQuote } from "../controllers/quoteController.js"
 
 const router = express.Router()
 
@@ -10,6 +10,12 @@ const router = express.Router()
 
 router.get('/', getRandomQuote)
 
-router.get('/', createQuote)
+router.get('/all', getAllQuotes)
+
+router.post('/', createQuote)
+
+router.delete('/:id',deleteQuote)
+
+router.put('/:id', updateQuote)
 
 export default router
