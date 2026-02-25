@@ -1,0 +1,27 @@
+{
+  "name": "backjscour",
+  "version": "1.0.0",
+  "description": "JavaScript vous permet de faire des sites/app coté front.\r Cependant il exist eun outil qui vous permet d'utiliser vos compétences JS\r pour créer des projets BACK.",
+  "homepage": "https://github.com/neshdras/coursbackjs#readme",
+  "bugs": {
+    "url": "https://github.com/neshdras/coursbackjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neshdras/coursbackjs.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.2"
+  }
+}
