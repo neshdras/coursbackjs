@@ -1,5 +1,5 @@
 import express from "express"
-import { createQuote, deleteQuote, getAllQuotes, getRandomQuote, updateQuote } from "../controllers/quoteController.js"
+import { createQuote, deleteQuote, getAiQuote, getAllQuotes, getRandomQuote, updateQuote } from "../controllers/quoteController.js"
 import { protect } from "../middlewares/authMiddleware.js"
 
 const router = express.Router()
@@ -10,6 +10,8 @@ const router = express.Router()
 // Une app qui fournit une phrase inspirante
 
 router.get('/', getRandomQuote)
+
+router.get('/aiquote', getAiQuote)
 
 router.get('/all', getAllQuotes)
 
